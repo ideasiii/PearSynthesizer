@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e79acf9a-000e-44a4-885d-ae63cb9e62e8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{86220cd2-216d-4891-a983-f5fb6053593e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2ce9f22f-c84e-4172-a777-c96d5ec687f7}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="CART">
+      <UniqueIdentifier>{64ad65b7-69b5-48dc-829a-bf2b06e7f168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WaveDraw">
+      <UniqueIdentifier>{46a2f724-6ad1-4f6c-ae02-b68a67721e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tts">
+      <UniqueIdentifier>{5616c88a-891f-4d5e-ab64-87793a972807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ColorList">
+      <UniqueIdentifier>{9cb3483d-8634-43b0-93e4-708ec2732d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WaveFile">
+      <UniqueIdentifier>{c8a868c9-91b1-4906-9762-fe1f94d11fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hts_engine">
+      <UniqueIdentifier>{b65d0fc7-6ce6-4e08-a3f9-39b0302d4621}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PearSynthesizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PearSynthesizerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextProgressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CART\CART.cpp">
+      <Filter>CART</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveDraw\TextProgressCtrl.cpp">
+      <Filter>WaveDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveDraw\WaveViewer.cpp">
+      <Filter>WaveDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\common.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Cttswave.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Cwave.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Digit.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\DIGITUNIT.CPP">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Memio.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\MyRecordset.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Phone.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\Word.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="tts\WordInfo.cpp">
+      <Filter>tts</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorList\color.cpp">
+      <Filter>ColorList</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorList\ColorListCtrl.cpp">
+      <Filter>ColorList</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveFile.cpp">
+      <Filter>WaveFile</Filter>
+    </ClCompile>
+    <ClCompile Include="hts_engine\hts_engine.cpp">
+      <Filter>hts_engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PearSynthesizer.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PearSynthesizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PearSynthesizerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextProgressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CART\CART.h">
+      <Filter>CART</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveDraw\Sound_to_Pitch.h">
+      <Filter>WaveDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveDraw\TextProgressCtrl.h">
+      <Filter>WaveDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveDraw\WaveViewer.h">
+      <Filter>WaveDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\common.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\Cttswave.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\Cwave.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\digit.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\Memio.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\MyRecordset.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\Phone.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\Word.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="tts\WordInfo.h">
+      <Filter>tts</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorList\color.h">
+      <Filter>ColorList</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorList\ColorListCtrl.h">
+      <Filter>ColorList</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveFile.h">
+      <Filter>WaveFile</Filter>
+    </ClInclude>
+    <ClInclude Include="hts_engine\hts_engine.h">
+      <Filter>hts_engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\PearSynthesizer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PearSynthesizer.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

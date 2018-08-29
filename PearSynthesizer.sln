@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PearSynthesizer", "PearSynthesizer.vcxproj", "{8C5CD2F4-4186-47F2-BF08-046730613617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C5CD2F4-4186-47F2-BF08-046730613617}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C5CD2F4-4186-47F2-BF08-046730613617}.Debug|Win32.Build.0 = Debug|Win32
+		{8C5CD2F4-4186-47F2-BF08-046730613617}.Release|Win32.ActiveCfg = Release|Win32
+		{8C5CD2F4-4186-47F2-BF08-046730613617}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31042FA8-6903-4AE3-99B6-8F2657C60CC7}
+	EndGlobalSection
+EndGlobal
