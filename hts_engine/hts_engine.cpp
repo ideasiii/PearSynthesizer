@@ -1,4 +1,4 @@
-/*  ---------------------------------------------------------------  */
+﻿/*  ---------------------------------------------------------------  */
 /*           The HMM-Based Speech Synthesis System (HTS)             */
 /*                       HTS Working Group                           */
 /*                                                                   */
@@ -59,7 +59,7 @@ int hts_engine(char* command[], double f0r, double sr, int spk)
 {
    char **argv = &command[0];
 
-   FILE *labfp=stdin;
+   FILE *labfp=stdin; // label 具有欲合成   文本中每個聲母、韻母及靜音停頓的文脈相關語言參數
    FILE *lf0fp=NULL, *mcepfp=NULL, *durfp=NULL, *rawfp=NULL, *tracefp=NULL;
   
    ModelSet     ms;
@@ -100,137 +100,6 @@ int hts_engine(char* command[], double f0r, double sr, int spk)
    mceppst.dw.num = 0;
 
   
-   /* parse command line */
-  /* if (argc==1)
-      HTS_Usage();
-   
-   while (--argc)
-      if (**++argv == '-') {
-         switch (*(*argv+1)) {
-            case 'v': 
-               switch (*(*argv+2)) {
-                  case 's': gp.algnst = 1;  break;
-                  case 'p': gp.algnph = 1;  break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-v%c'.\n", *(*argv+2));
-               }
-               break;
-            case 't':
-               switch (*(*argv+2)) {
-                  case 'd': ts.fp[DUR] = HTS_Getfp(*(argv+1), "r");  break;
-                  case 'f': 
-                  case 'p': ts.fp[LF0] = HTS_Getfp(*(argv+1), "r");  break;
-                  case 'm': ts.fp[MCP] = HTS_Getfp(*(argv+1), "r");  break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-t%c'.\n", *(*argv+2));
-               }
-               ++argv; --argc;
-               break;
-            case 'm':
-               switch (*(*argv+2)) {
-                  case 'd': ms.fp[DUR] = HTS_Getfp(*(argv+1), "rb");  break;
-                  case 'f': 
-                  case 'p': ms.fp[LF0] = HTS_Getfp(*(argv+1), "rb");  break;
-                  case 'm': ms.fp[MCP] = HTS_Getfp(*(argv+1), "rb");  break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-m%c'.\n", *(*argv+2));
-               }
-               ++argv; --argc;
-               break;
-            case 'd':
-               switch (*(*argv+2)) {
-                  case 'm': mceppst.dw.fn[mceppst.dw.num] = *(argv+1);
-                             mceppst.dw.num++;
-                             break;
-                  case 'f':
-                  case 'p': lf0pst.dw.fn[lf0pst.dw.num] = *(argv+1);
-                             lf0pst.dw.num++;
-                             break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-d%c'.\n", *(*argv+2)); 
-               }
-               ++argv; --argc;
-               break;
-            case 'o':
-               switch (*(*argv+2)) {
-                  case 'r': rawfp   = HTS_Getfp(*(argv+1), "wb");  break;
-                  case 'f': 
-                  case 'p': lf0fp   = HTS_Getfp(*(argv+1), "wb");  break;
-                  case 'm': mcepfp  = HTS_Getfp(*(argv+1), "wb");  break;
-                  case 'd': durfp   = HTS_Getfp(*(argv+1), "wt");  break;
-                  case 't': tracefp = HTS_Getfp(*(argv+1), "w");  break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-o%c'.\n", *(*argv+2)); 
-               }
-               ++argv; --argc;
-               break;
-            case 'h': HTS_Usage(); break;
-            case 's':
-               i = atoi(*++argv);
-               if (i>0 && i<=48000) gp.RATE = i;
-               --argc;
-               break;
-            case 'p':
-               i = atoi(*++argv);
-               if (i>0 && i<=2000) gp.FPERIOD = i;
-               --argc;
-               break; 
-            case 'a':
-               f = atof(*++argv);
-               if (f<=1.0 && f>=0.0) gp.ALPHA = f; 
-               --argc;
-               break;
-            case 'b':
-               f = atof(*++argv);
-               if (f<=0.8 && f>=-0.8) gp.BETA = f; 
-               --argc;
-               break;
-            case 'r':
-               f = atof(*++argv);
-               if (f<=1.0 && f>=-1.0) gp.RHO = f;
-               --argc;
-               break;
-            case 'f':
-               switch (*(*argv+2)) {
-                  case 's': f = atof(*++argv);  
-                             if (f<=5.0 && f>=0.0) gp.F0_STD=f; break;
-                  case 'm': f = atof(*++argv);  
-                             if (f<=100.0 && f>=0.0) gp.F0_MEAN = f;  break;
-                  default:  HTS_Error(1, "hts_engine: Invalid option '-f%c'.\n", *(*argv+2)); 
-               }
-               --argc;
-               break;
-            case 'u':
-               f = atof(*++argv);
-               if (f<=1.0 && f>=0.0) 
-                  gp.UV = f;
-               --argc;
-               break;
-            case 'l':
-               f = atof(*++argv);
-               if (f<=30.0 && f>=0.0) gp.LENGTH = f;
-               --argc;
-               break;
-            default:
-               HTS_Error(1, "hts_engine: Invalid option '-%c'.\n", *(*argv+1));
-         }
-      }
-      else 
-         labfp = HTS_Getfp(*argv, "r");*/
-
-   /* check command line */
- /*  if (ts.fp[DUR] == NULL)
-      HTS_Error(1, "hts_engine: file for duration trees is not specified.\n");
-   if (ts.fp[LF0] == NULL)
-      HTS_Error(1, "hts_engine: file for log F0 trees is not specified.\n");
-   if (ts.fp[MCP] == NULL)
-      HTS_Error(1, "hts_engine: file for mcep trees is not specified.\n");
-   if (ms.fp[DUR] == NULL)
-      HTS_Error(1, "hts_engine: file for duration pdfs is not specified.\n");
-   if (ms.fp[MCP] == NULL)
-      HTS_Error(1, "hts_engine: file for mcep pdfs is not specified.\n");
-   if (ms.fp[LF0] == NULL)
-      HTS_Error(1, "hts_engine: file for log F0 pdfs is not specified.\n");
-   if (gp.algnst && gp.algnph)
-      HTS_Error(1, "hts_engine: options '-vs' and '-vp' are exclusive.\n");
-   if (gp.LENGTH>0.0 && gp.RHO!=0.0)
-      HTS_Error(1, "hts_engine: options '-r' and '-l' are exclusive.\n");*/
-
 	char chName[50];
 
 	// files for decision trees

@@ -1,1 +1,1 @@
-cd D:\Project\TTS\PearSynthesizer20180827 && java -Xmx400m -jar ".\ChineseParserServer\ChineseParserServer.jar" -p ".\ChineseParserServer\chineseFactored.ser.gz" -i input_line.tok -o output_line.tok -is input_line.flag -os output_line.flag -l 40
+cd D:\Github\PearSynthesizer && java -Xmx400m -jar ".\ChineseParserServer\ChineseParserServer.jar" -p ".\ChineseParserServer\chineseFactored.ser.gz" -i input_line.tok -o output_line.tok -is input_line.flag -os output_line.flag -l 40
